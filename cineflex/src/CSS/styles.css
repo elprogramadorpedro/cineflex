@@ -1,0 +1,22 @@
+
+
+.headers{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 40px;
+    width: 375px;
+    height: 67px;
+    justify-content: center;
+    align-items: center;
+    color: #E8833A;
+    font-size: 34px;
+    position: fixed;
+    top: 0;
+    border: 1px solid red;
+    background-color: #C3CFD9;
+    display: flex;
+    }
+
+ 
