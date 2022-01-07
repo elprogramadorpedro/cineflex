@@ -5,8 +5,10 @@ import "./CSS/reset.css";
 import "./CSS/styles.css";
 import ListMovies from "./Components/ListMovies";
 import GetMovie from "./Components/GetMovie";
+import ChooseSeat from "./Components/ChooseSeat";
 
 function App() {
+    const [request, setRequest] = useState({});
   return (
     <>
       <BrowserRouter>
@@ -18,6 +20,12 @@ function App() {
           <Route path="/sessoes/:idFilme" exact>
                         <GetMovie />
          </Route>
+
+         <Route path="/assentos/:idSessao" exact>
+                        <ChooseSeat
+                            request={request}  setRequest={setRequest}
+                        />
+          </Route>
 
         </Switch>
       </BrowserRouter>
