@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./CSS/reset.css";
 import "./CSS/styles.css";
 import ListMovies from "./Components/ListMovies";
+import GetMovie from "./Components/GetMovie";
 
 function App() {
   return (
@@ -13,6 +14,11 @@ function App() {
           <Route path="/" exact>
             <ListMovies />
           </Route>
+
+          <Route path="/sessoes/:idFilme" exact>
+                        <GetMovie />
+         </Route>
+
         </Switch>
       </BrowserRouter>
     </>
