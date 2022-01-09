@@ -31,16 +31,16 @@ export default function GetMovie() {
       <div>
         <h2>Selecione o horário</h2>
       </div>
-      <div>
+      <div className="set-films">
         {films.days.map((days, x) => (
-          <div>
+          <div className="films-days">
             <p>
               {days.weekday} - {days.date}
             </p>
-            <div>
+            <div className="option-our">
               {showtimes[x].map((showtime) => (
                 <Link to={`/assentos/${showtime.id}`}>
-                  <div id={showtime.id}>
+                  <div className="information-ourfilms" id={showtime.id}>
                     <p>{showtime.name}</p>
                   </div>
                 </Link>
@@ -49,8 +49,8 @@ export default function GetMovie() {
           </div>
         ))}
       </div>
-      <div>
-        <div>
+      <div className="informationmovie">
+        <div className="images img-position">
           <img src={films.posterURL} alt={films.title}></img>
         </div>
         <div>

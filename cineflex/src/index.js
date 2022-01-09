@@ -6,6 +6,7 @@ import "./CSS/styles.css";
 import ListMovies from "./Components/ListMovies";
 import GetMovie from "./Components/GetMovie";
 import ChooseSeat from "./Components/ChooseSeat";
+import Sucesso from "./Components/Sucesso";
 
 function App() {
     const [request, setRequest] = useState({});
@@ -27,6 +28,10 @@ function App() {
                         />
           </Route>
 
+          <Route path="/sucess" exact>
+                        <Sucesso request={request}/>
+                    </Route>
+0
         </Switch>
       </BrowserRouter>
     </>
